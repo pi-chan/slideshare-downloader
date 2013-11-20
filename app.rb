@@ -25,8 +25,8 @@ class App < Sinatra::Base
       return haml :index
     end
 
-    puts path
+    # You should remove the 'path' file after this action.
+    # But on Heroku, 'path' file must not be manually deleted.
     send_file(path)
-    File.delete(path)
   end
 end
