@@ -1,0 +1,14 @@
+%html
+  %head
+    %title SlideShare Download
+
+    %link(href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css' rel='stylesheet')
+    %script{type:"text/javascript", src:"http://codeorigin.jquery.com/jquery-2.0.3.min.js"}
+    %script{type:"text/javascript", src:"/main.js"}
+    :css
+      .container {
+        text-align:center;
+      }
+  %body
+    .container
+      = yield

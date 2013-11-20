@@ -1,0 +1,19 @@
+%h1 slideshare downloader
+%p.lead get undownloadable slides as PDF.
+
+.row
+  #alert.alert.alert-danger.col-xs-4.col-xs-offset-4
+
+- if @failed
+  .alert.alert-danger.col-xs-4.col-xs-offset-4
+    cannot download the slide.
+
+%form#form(action='/download' method="post")
+  %input{type:'textfield', name:'url', size:50 }
+  %input#submit{type:'submit', value:'download'}
+
+
+%div
+  %a(href="mailto:xoyip@piyox.info")
+    contact
+    
